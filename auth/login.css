@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Finlandica', sans-serif;
+}
+#bg {
+  background-image: url("/static/res/SVGs/loginSVG.svg");
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(128, 128, 255, var(--tw-bg-opacity));
+}
+
+.w-1\/2 {
+  width: 49.3% !important;
+}
+
+.tw-twixmw {
+  display: block;
+  width: 100%;
+  padding: 8px 40px 8px 21px;
+  --tw-text-opacity: 1;
+  color: rgba(244, 244, 245, var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(24, 24, 27, var(--tw-border-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.375rem;
+}
+
+.tw-twixmw:focus {
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(99, 102, 241, var(--tw-border-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(99, 102, 241, var(--tw-ring-opacity));
+}
+
+#showHidePass input[type=checkbox] {
+  display: none;
+}
+
+#showHidePass .label {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("/static/res/SVGs/openEye.svg") no-repeat left center;
+  padding: 3px 3px 3px 15px;
+}
+
+#showHidePass input[type=checkbox]:checked + .label {
+  color: #fff;
+  background-image: url("/media/SVGs/closedEye.svg");
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  box-shadow: 0 0 0 1000px rgba(128, 128, 255, var(--tw-bg-opacity)) inset;
+  -webkit-box-shadow: 0 0 0 1000px rgba(128, 128, 255, var(--tw-bg-opacity)) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}

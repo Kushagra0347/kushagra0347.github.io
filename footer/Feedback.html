@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="Feedback.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navigation Bar for Desktops and Tablets -->
+      <nav id="lg-nav">
+        <a href="../index.html"><h1 style="color: yellow">E-kart</h1></a>
+        <div class="nav-links">
+          <a href="../index.html" class="link"> Home </a>
+          <a href="../index.html#categories" class="link"> Categories </a>
+          <a class="link"> Cart </a>
+        </div>
+        <!-- TODO: Complete The Sign In Button Design -->
+        <div class="auth-links">
+          <a href="../auth/login.html" class="auth-link"> Sign In </a>
+        </div>
+      </nav>
+      <!-- Navigation Bar for mobiles -->
+      <nav id="sm-nav">
+        <a href="#"><h1>E-kart</h1></a>
+        <button>Click</button>
+        <div class="nav-links">
+          <a class="link"> Home </a>
+          <a class="link"> Categories </a>
+          <a class="link"> Cart </a>
+        </div>
+        <!-- TODO: Complete The Sign In Button Design -->
+        <div class="auth-links">
+          <a href="../auth/form.html" class="auth-link"> Sign In </a>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="form-container">
+          <form method="post">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="id_name" />
+            </div>
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="id_email" />
+            </div>
+            <div class="input-group">
+              <label for="feedback">Feedback</label>
+              <textarea
+                class="feedback"
+                type="text"
+                name="feedback"
+                id="id_feedback"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer">
+        <nav class="footer-links">
+          <a href="#" class="link">About</a>
+          <a href="#" class="link">Privacy Policy</a>
+          <a href="#" class="link">Terms &amp; Condition</a>
+          <a href="#" class="link">Feedback</a>
+        </nav>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/kushagra0347/"
+            target="_blank"
+            class="link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/phoenix0347"
+            target="_blank"
+            class="link"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div class="copyright">&copy; 2022 E-kart. All rights Reserved</div>
+      </div>
+    </div>
+  </body>
+</html>

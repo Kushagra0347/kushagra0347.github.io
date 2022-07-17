@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- Tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9f22ba57d1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="page.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navigation Bar for Desktops and Tablets -->
+      <nav id="lg-nav">
+        <a href="#"><h1 style="color: yellow">E-kart</h1></a>
+        <div class="nav-links">
+          <a href="#" class="link active"> Home </a>
+          <a href="#categories" class="link"> Categories </a>
+          <a class="link"> Cart </a>
+        </div>
+        <!-- TODO: Complete The Sign In Button Design -->
+        <div class="auth-links">
+          <a href="auth/login.html" class="auth-link"> Sign In </a>
+        </div>
+      </nav>
+      <!-- Navigation Bar for mobiles -->
+      <nav id="sm-nav">
+        <a href="#"><h1>E-kart</h1></a>
+        <button>Click</button>
+        <div class="nav-links">
+          <a class="link active"> Home </a>
+          <a class="link"> Categories </a>
+          <a class="link"> Cart </a>
+        </div>
+        <!-- TODO: Complete The Sign In Button Design -->
+        <div class="auth-links">
+          <a href="auth/form.html" class="auth-link"> Sign In </a>
+        </div>
+      </nav>
+
+      <!-- TODO: Complete This Section -->
+      <div class="content">
+        <!-- Slider -->
+        <div
+          id="carouselDarkVariant"
+          class="carousel slide carousel-fade relative"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicators -->
+          <div
+            class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+          >
+            <button
+              data-bs-target="#carouselDarkVariant"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              data-bs-target="#carouselDarkVariant"
+              data-bs-slide-to="1"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              data-bs-target="#carouselDarkVariant"
+              data-bs-slide-to="2"
+              aria-label="Slide 1"
+            ></button>
+          </div>
+
+          <!-- Inner -->
+          <div class="carousel-inner relative w-full overflow-hidden">
+            <!-- Single item -->
+            <div class="carousel-item active relative float-left w-full">
+              <img
+                src="img/Google Pixel 6.jpg"
+                class="block w-full"
+                alt="Google Pixel 6"
+              />
+              <!-- <div
+                class="carousel-caption hidden md:block absolute text-center"
+              >
+                <h5 class="text-xl">First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div> -->
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="img/iPhone 13.jpg"
+                class="block w-full"
+                alt="iPhone 13"
+              />
+              <!-- <div
+                class="carousel-caption hidden md:block absolute text-center"
+              >
+                <h5 class="text-xl">Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div> -->
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="img/Samsung S21.jpg"
+                class="block w-full"
+                alt="Woman Reading a Book"
+              />
+              <!-- <div
+                class="carousel-caption hidden md:block absolute text-center"
+              >
+                <h5 class="text-xl">Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div> -->
+            </div>
+          </div>
+          <!-- Inner -->
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button"
+            data-bs-target="#carouselDarkVariant"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon inline-block bg-no-repeat"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button"
+            data-bs-target="#carouselDarkVariant"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon inline-block bg-no-repeat"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Category Section -->
+        <div class="category-container" id="categories">
+          <div class="heading">
+            <h1 class="highlight">Categories</h1>
+            <h1>You Might Like</h1>
+          </div>
+          <div class="categories">
+            <div class="category">
+              <h2>Phone</h2>
+              <img src="img/Categories/Phone.jpg" alt="" />
+            </div>
+            <div class="category">
+              <h2>Laptop</h2>
+              <img src="img/Categories/Laptop.jpg" alt="" />
+            </div>
+            <div class="category">
+              <h2>Books</h2>
+              <img src="img/Categories/Books.jpg" alt="" />
+            </div>
+            <div class="category">
+              <h2>Clothing</h2>
+              <img src="img/Categories/Clothing.jpg" alt="" />
+            </div>
+            <div class="category">
+              <h2>Shoes</h2>
+              <img src="img/Categories/Shoes.jpg" alt="" />
+            </div>
+            <div class="category">
+              <h2>Earphones</h2>
+              <img src="img/Categories/Earphones.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Company Section -->
+        <div class="company-container" id="companies">
+          <div class="heading">
+            <h1 class="highlight">Companies</h1>
+            <h1>You Might Like</h1>
+          </div>
+          <div class="companies">
+            <div class="company">
+              <img src="img/Logos/Google Logo.webp" alt="" />
+            </div>
+            <div class="company">
+              <img src="img/Logos/OnePlus Logo.png" alt="" />
+            </div>
+            <div class="company">
+              <img src="img/Logos/Apple Logo.jpg" alt="" />
+            </div>
+            <div class="company">
+              <img
+                src="img/Logos/Asus Logo.jpg"
+                style="border-radius: 0.3rem"
+                alt=""
+              />
+            </div>
+            <div class="company">
+              <img src="img/Logos/MI Logo.png" alt="" />
+            </div>
+            <div class="company">
+              <img src="img/Logos/Motorola Logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Review -->
+        <div class="product-review-container">
+          <div class="heading-container">
+            <h1>Product <span class="highlight">Reviews</span></h1>
+          </div>
+          <div class="product-review">
+            <div class="product">
+              <h2><span class="highlight">Nothing</span> Phone 1</h2>
+              <iframe
+                src="https://www.youtube.com/embed/mrkAmmMakMg"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="product">
+              <h2><span class="highlight">Asus</span> ROG Phone 6 Pro</h2>
+              <iframe
+                src="https://www.youtube.com/embed/dKq_xfCz3Jk"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="product">
+              <h2><span class="highlight">Google</span> Pixel 6 Pro</h2>
+              <iframe
+                src="https://www.youtube.com/embed/9hvjBi4PKWA"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <nav class="footer-links">
+          <a href="#" class="link">About</a>
+          <a href="#" class="link">Privacy Policy</a>
+          <a href="#" class="link">Terms &amp; Condition</a>
+          <a href="footer/Feedback.html" class="link">Feedback</a>
+        </nav>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/kushagra0347/"
+            target="_blank"
+            class="link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/phoenix0347"
+            target="_blank"
+            class="link"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div class="copyright">&copy; 2022 E-kart. All rights Reserved</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>

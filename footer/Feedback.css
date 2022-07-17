@@ -1,0 +1,54 @@
+.form-container{
+    min-height: 80vh;
+    width: 100%;
+    color: white;
+}
+
+.form-container form{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group label{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.input-group input{
+    padding: 0.5rem 0.4rem;
+    width: 20vw;
+    background-color: rgb(128, 128, 255, 0.1);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 0.5rem;
+}
+.input-group input:focus-visible{
+    outline: none;
+}
+
+.input-group .feedback{
+    padding: 0.5rem 0.4rem;
+    width: 20vw;
+    background-color: rgb(128, 128, 255, 0.1);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 0.5rem;
+    width: 18vw;
+    height: 16vh;
+}
+
+.input-group .feedback:focus-visible{
+    outline: none;
+}
