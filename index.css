@@ -96,6 +96,7 @@ nav .nav-links a:hover {
 }
 
 .content {
+  width: 100%;
   padding-bottom: 4rem;
   min-height: 100vh;
 }
