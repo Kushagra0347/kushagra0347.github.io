@@ -1,0 +1,117 @@
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cart-container {
+  /* border: 1px solid white; */
+  width: 75%;
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0.5rem 1rem 1rem;
+  background-color: rgb(30, 41, 59);
+  border-radius: 0.475rem;
+}
+.cart-price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1.5px solid rgb(71 85 105);
+}
+.cart-price-container h1 {
+  font-weight: 500 !important;
+  margin-bottom: 1rem;
+}
+.cart-price-container h4 {
+  color: rgb(148 163 184);
+}
+.cart-price-container .cart-products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cart-products-container .cart-product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1.5px solid rgb(71 85 105);
+}
+
+.cart-product img {
+  width: 15%;
+}
+
+.cart-product .product-details {
+  padding: 1rem 0.5rem;
+  width: 75%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.product-details h5 {
+  color: rgb(148 163 184);
+}
+.color h5 {
+  color: white;
+  display: inline-block;
+}
+.color span {
+  color: rgb(148 163 184);
+}
+.size h5 {
+  color: white;
+  display: inline-block;
+}
+.size span {
+  color: rgb(148 163 184);
+}
+.product-details .product-footer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(8 145 178);
+  margin-top: 1rem;
+  font-size: 0.75rem;
+}
+.product-footer .pipe {
+  background-color: rgb(148 163 184);
+  width: 1.5px;
+  border-radius: 0.1rem;
+  height: 1rem;
+}
+.product-footer .delete {
+  color: rgb(239 68 68);
+  cursor: pointer;
+}
+.product-footer .delete:hover {
+  color: rgb(220 38 38);
+  text-decoration: underline;
+}
+.cart-product .price {
+  font-weight: 700 !important;
+}
+
+.cart-products-container .subtotal {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-total {
+  margin: 1rem 1rem 1rem 0.5rem;
+  background-color: rgb(30, 41, 59);
+  border-radius: 0.475rem;
+  width: 25%;
+  height: 15rem;
+}

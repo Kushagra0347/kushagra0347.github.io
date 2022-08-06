@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- Tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9f22ba57d1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./cart.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navigation Bar for Desktops and Tablets -->
+      <nav id="lg-nav">
+        <a href="#"><h1 style="color: yellow">E-kart</h1></a>
+        <div class="nav-links">
+          <a href="../index.html" class="link"> Home </a>
+          <a href="./cart.html" class="link active"> Cart </a>
+        </div>
+        <!-- TODO: Complete The Sign In Button Design -->
+        <div class="auth-links">
+          <a href="../auth/login.html" class="auth-link"> Sign In </a>
+        </div>
+      </nav>
+      <!-- Navigation Bar for mobiles -->
+      <nav id="sm-nav">
+        <a href="#"><h1>E-kart</h1></a>
+        <button>Click</button>
+        <div class="nav-links">
+          <a class="link active"> Home </a>
+          <a class="link"> Categories </a>
+          <a class="link"> Cart </a>
+        </div>
+        <!-- TODO: Complete The Sign In Button Design -->
+        <div class="auth-links">
+          <a href="../auth/form.html" class="auth-link"> Sign In </a>
+        </div>
+      </nav>
+
+      <!-- TODO: Complete This Section -->
+      <div class="content">
+        <div class="cart-container">
+          <div class="cart-price-container">
+            <h1>Shopping Cart</h1>
+            <h4>Price</h4>
+          </div>
+          <div class="cart-products-container">
+            <div class="cart-product">
+              <img src="../img/Category/Phones/Google Pixel 6a.png" alt="" />
+              <div class="product-details">
+                <h3 class="name">Google Pixel 6a</h3>
+                <h5>in stock</h5>
+                <div class="color">
+                  <h5>Color:</h5>
+                  <span>Chalk</span>
+                </div>
+                <div class="size">
+                  <h5>Size Name:</h5>
+                  <span>4GB|128GB</span>
+                </div>
+                <div class="product-footer">
+                  <div class="quantity">Qty</div>
+                  <div class="pipe"></div>
+                  <div class="delete">Delete</div>
+                  <div class="pipe"></div>
+
+                  <div class="save-for-later">Save For Later</div>
+                </div>
+              </div>
+              <div class="price">₹19,904</div>
+            </div>
+            <div class="cart-product">
+              <img src="../img/Category/Phones/Nothing Phone 1.png" alt="" />
+              <div class="product-details">
+                <h3 class="name">Nothing Phone (1)</h3>
+                <h5>not in stock</h5>
+                <div class="color">
+                  <h5>Color:</h5>
+                  <span>White</span>
+                </div>
+                <div class="size">
+                  <h5>Size Name:</h5>
+                  <span>4GB|128GB</span>
+                </div>
+                <div class="product-footer">
+                  <div class="quantity">Qty</div>
+                  <div class="pipe"></div>
+                  <div class="delete">Delete</div>
+                  <div class="pipe"></div>
+                  <div class="save-for-later">Save For Later</div>
+                </div>
+              </div>
+              <div class="price">₹30,000</div>
+            </div>
+            <div class="subtotal">
+              Subtotal (2 items): &nbsp;<strong>₹49,900</strong>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total"></div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <nav class="footer-links">
+          <a href="#" class="link">About</a>
+          <a href="#" class="link">Privacy Policy</a>
+          <a href="#" class="link">Terms &amp; Condition</a>
+          <a href="../footer/Feedback.html" class="link">Feedback</a>
+        </nav>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/kushagra0347/"
+            target="_blank"
+            class="link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/phoenix0347"
+            target="_blank"
+            class="link"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div class="copyright">&copy; 2022 E-kart. All rights Reserved</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
