@@ -15,9 +15,12 @@ for (let i = 0; i < n; i++) {
   itemsInCart[i] = 1;
 }
 
+// Function For Changing Quantity Of Items in Cart
 function changeQty(ele, items) {
   $(ele).closest(".quantity").find("span").text(items);
 }
+
+// Function for changing total items of cart
 function changeCartTotal(itemArr) {
   let totalItems = 0;
   for (let i = 0; i < n; i++) {
